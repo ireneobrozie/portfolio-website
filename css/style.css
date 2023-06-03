@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #030b30;
+    /* background: #000; */
+    /* width: 1100px; */
+    /* overflow-x: hidden; */
+    margin: 0 90px;
+    color: white;
+    
+}
+
+nav h4{
+    font-family: 'Tangerine', cursive;    
+    font-size: 20px;
+}
+nav{
+    background-color: #8b91af;
+    padding: 20px 50px;
+    letter-spacing: 1px;
+    
+}
+nav ul{
+    box-sizing: border-box;
+    display: flex;
+    list-style-type: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    gap: 40px;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.bars{
+    color:#030b30;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar li a:hover{
+    color: rgb(188, 179, 168);
+    padding: 10px 20px;
+    
+}
+.navbar li:hover{
+    background-color: #030b30;
+    padding: 10px 20px;
+
+}
+.navbar li{
+    padding: 10px 20px;
+
+}
+
+.btn:hover{
+    border-color: rgb(161, 161, 208);
+    color: rgb(207, 212, 228);
+}
+.cover{
+    padding-top: 10px;
+    height: 500px;
+    background: url(../images/Web.png) no-repeat center center/ cover;
+    opacity: 0.6;
+    
+}
+
+
+
+.about{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    /* padding: 20px; */
+    margin-top: 20px;
+    border: 2px solid black;
+    justify-content: space-between;
+    
+    
+}
+
+.spec img {
+    width: 80%;
+    height: 550px;
+}
+.side{
+    height: 400px;
+    opacity: 0.8;
+    padding: 15px;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    margin: auto;
+    
+}
+
+
+
+
+.about button{
+    color: #f4f5fa;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    padding: 10px;
+    border: 2px solid rgb(186, 202, 227);
+    border-radius: 3px;
+}
+
+.story{
+    line-height: 1.6;
+}
+.stretch{
+    text-align: center;
+    padding: 25px;
+}
+.stretch h5{
+    color: aqua;
+
+}
+.slidecont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  
+    padding: 5px;
+}
+
+
+.slide{
+    /* background-color: #0f1f34; */
+    border: solid 2px black;
+    padding-bottom: 12px;
+}
+.slide img{
+    width: 100%;
+    height: 300px;
+}
+.slide h3, p{
+    padding-left: 30px;
+    line-height: 1.9;
+}
+.slide h3, a{
+    color: rgba(146, 117, 22, 0.8);
+    
+}
+.webpages{
+    margin: 40px 0;
+    line-height: 1.8;
+    padding: 30px;
+}
+
+.website{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    /* height: 200px; */
+
+}
+
+.page img{
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+.website .page{
+    margin: auto;
+}
+.side1{
+    width: 40%;
+}
+.about{
+    display: flex;
+}
+.contact{
+    margin-top: 70px;
+    border: solid 2px black;
+    padding: 50px;
+    margin: auto;
+}
+
+.contact h2{
+    font-size: 50px;
+}
+.cont1{
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 50px;
+    justify-content: space-between;
+
+
+}
+.contact1 p{
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact2 input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.contact label{
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.contact textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contact button{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    border: 1px solid rgb(104, 66, 66);
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #8b91af;
+    padding: 20px;
+}
+footer .icons{
+    padding-right: 40px;
+}
+footer .icons a{
+    text-decoration: none;
+    
+}
+
+footer .icons img{
+    margin-right: 30px;
+     
+}
+
+
+@media(max-width: 768px){
+    body{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    nav h4{
+        font-size: 18px;
+        text-align: center;
+
+    }
+    nav h4 i{
+        font-size: 15px;
+        
+    }
+    nav{
+        font-size: 10px;
+    }
+    .bars{
+        display: flex;
+    }
+
+    .links{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+   
+    
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar :checked ~ .links{
+        bottom: 0;
+    }
+    
+
+    .about{
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 100%;
+       
+    }
+    .spec{
+        align-self: center;
+    }
+    .spec img{
+        width: 100%;
+        height: 300px;
+
+    }
+    .side h1{
+        font-size: 15px;
+    }
+    .side button{
+        /* font-size: 10px; */
+        width: auto;
+    }
+    .slidecont {
+        grid-template-columns: 1fr;
+    }
+    .website{
+        grid-template-columns: 1fr;
+    }
+    .cont1{
+        display: block;
+    }
+   
+    .contact h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .contact{
+        width: 100%;
+        box-sizing:border-box ;
+        justify-content: center;
+        margin: auto;
+    }
+    .contact form{
+        width: 90%;
+       margin: auto;
+    }
+    
+    
+
+    .slide{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+
+    }
+    .slide img{
+        width: 100%;
+        height: auto;
+    }
+    .website{
+        width: 80%;
+        /* background-color: #fff; */
+        margin: auto;
+
+    }
+
+    .website .page{
+        border: 3px solid black;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .website h3{
+        padding-left: 20px;
+    }
+    .website img{
+        width: 100%;
+        height: auto;
+
+    }
+    .stretch{
+        margin-bottom: 20px;
+        line-height: 2;
+    }
+    
+    .contact input {
+        /* width: 80%; */
+    }
+    .contact textarea{
+        /* width: 80%; */
+        display: block;
+    }
+    footer{
+        display: block;
+        text-align: center;
+    }
+    footer div:first-of-type{
+        margin-bottom: 20px;
+
+    }
+    footer .icons{
+        margin-left:60px ;
+    }
+}
